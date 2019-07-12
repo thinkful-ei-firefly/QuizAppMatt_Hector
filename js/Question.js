@@ -7,12 +7,18 @@ class Question {
   correctAnswer(choice) {
     return choice === this.answer;
   }
-  handleResult(result) {
+  handleResult(correct) {
     return `<div class="row">
     <section class="feedback">
       <div class="feedback-text">
-        <h1>Rockin' Good Job!</h1>
-        <h2>you got it right!!</h2>
+        <h1>${correct ? "Rockin' Good Job!" : "Really Mate??"} </h1>
+        <h2>${
+          correct
+            ? "you got it right!!"
+            : `You'll have to do better than that the correct answer was  "${
+                this.answer
+              }"`
+        } </h2>
         <button class="feedback-button">Next Question!</button>
       </div>
     </section>

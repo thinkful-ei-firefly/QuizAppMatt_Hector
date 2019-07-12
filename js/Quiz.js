@@ -12,8 +12,12 @@ class Quiz {
   }
   guess(answer) {
     const question = this.getQuestionIndex();
-    if (question.correctAnswer(answer)) {
+    const correct = question.correctAnswer(answer);
+    if (correct) {
       this.score++;
+      this.showFeedBack(correct);
+    } else {
+      this.showFeedBack(correct);
     }
   }
   updateIndex() {

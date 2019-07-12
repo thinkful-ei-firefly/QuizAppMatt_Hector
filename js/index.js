@@ -25,9 +25,8 @@ const onSubmit = quiz => {
   $("main").one("submit", ".form", e => {
     e.preventDefault();
     let selected = $("input:checked").val();
-    const correct = quiz.getQuestionIndex().correctAnswer(selected)
-      ? true
-      : false;
+    const correct = quiz.getQuestionIndex().correctAnswer(selected);
+    $("main").html(quiz.getQuestionIndex().handleResult(correct));
     quiz.guess(selected);
     quiz.updateIndex();
     afterFeedback(correct);
@@ -44,8 +43,8 @@ function reset() {
   });
 }
 
-function afterFeedback(correct) {
-  $("main").html(db.feedbackPage(correct));
+function afterFeedback() {
+  //   $("main").html(db.feedbackPage(correct));
   $("main").one("click", ".feedback-button", () => render(quiz));
 }
 
