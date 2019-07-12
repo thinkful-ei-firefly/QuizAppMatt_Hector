@@ -63,3 +63,7 @@ header .quiz-stats {
 .feedback-button {
   margin-top: 3rem;
 }
+
+.reset-button {
+  display: none;
+}
