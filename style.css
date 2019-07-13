@@ -12,7 +12,7 @@ html {
 }
 html::after {
   content: "";
-  background: url(/img/beatles-background-2.jpg) no-repeat center center fixed;
+  background: url(img/beatles-background-2.jpg) no-repeat center center fixed;
   opacity: 0.9;
   background-size: cover;
   height: 100%;
