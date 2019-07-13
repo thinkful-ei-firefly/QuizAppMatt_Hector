@@ -1,12 +1,12 @@
 const db = {
   questions: [
     new Question(
-      "What is the best programming language",
+      "What is the best programming language?",
       ["Java", "Javascript", "C++", "C#"],
       "Javascript"
     ),
     new Question(
-      "What is the best part of Javascript",
+      "What is the best part of Javascript?",
       [
         "Prototypical Inheritance",
         "For in loops",
@@ -15,9 +15,9 @@ const db = {
       ],
       "Prototypical Inheritance"
     ),
-    new Question("wit da most ", ["yes", "no", "maybe", "so"], "yes"),
+    new Question("wit da most?", ["yes", "no", "maybe", "so"], "yes"),
     new Question(
-      "What is the best part of Javascript",
+      "What is the best part of Javascript?",
       [
         "Prototypical Inheritance",
         "For in loops",
@@ -26,7 +26,7 @@ const db = {
       ],
       "Prototypical Inheritance"
     ),
-    new Question("wit da most ", ["yes", "no", "maybe", "so"], "yes")
+    new Question("wit da most? ", ["yes", "no", "maybe", "so"], "yes")
   ],
   formTemplate: `<div class="row">
   <form class="form">

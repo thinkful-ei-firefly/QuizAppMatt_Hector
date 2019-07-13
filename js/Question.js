@@ -11,8 +11,10 @@ class Question {
     return `<div class="row">
     <section class="feedback">
       <div class="feedback-text">
-        <h1>${correct ? "Rockin' Good Job!" : "Really Mate??"} </h1>
-        <h2>${
+        <h1 class="feedback-title">${
+          correct ? "Rockin' Good Job!" : "Really Mate??"
+        } </h1>
+        <h2 class="feedback-title">${
           correct
             ? "you got it right!!"
             : `You'll have to do better than that the correct answer was:  "${

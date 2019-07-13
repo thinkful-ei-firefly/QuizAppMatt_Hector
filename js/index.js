@@ -11,7 +11,11 @@ function render(quiz) {
     //get current question
     const question = quiz.getQuestionIndex();
     //set question html
-    $(".question").html(question.text);
+    $(".question").html(
+      `<span>${
+        question.text
+      }</span> <span class="icon--question"><i class="fas fa-guitar"></i></span>`
+    );
     //set answers html
     question.choices.forEach((choice, index) => {
       $(`.choice${index}`).html(choice);
