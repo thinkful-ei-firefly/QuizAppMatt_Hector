@@ -31,16 +31,19 @@ const db = {
   formTemplate: `<div class="row">
   <form class="form">
     <h1 class="question">Question goes here</h1>
-    <label class="answerOption choice0" for="choice0"></label>
-      <input
-        type="radio"
-        value="a"
-        id="choice0"
-        name="questions"
-        required
-      />
-    
-    
+    <fieldset>
+    <div class="input-group"> 
+    <label class="answerOption choice0" for="choice0">
+     <span></span> </label>
+    <input
+      type="radio"
+      value="a"
+      id="choice0"
+      name="questions"
+      required
+    />
+    </div>
+    <div class="input-group"> 
     <label class="answerOption choice1" for="choice1"><span>what is my name</span>
     </label>
       <input
@@ -50,7 +53,9 @@ const db = {
         name="questions"
         required
       />
-      
+    </div>
+    <div class="input-group"> 
+    
     <label class="answerOption choice2" for="choice2"><span>what is my name</span>
     </label>
       <input
@@ -60,7 +65,8 @@ const db = {
         name="questions"
         required
       />
-      
+    </div>
+    <div class="input-group"> 
     <label class="answerOption choice3" for="choice3"> <span>what is my name</span>
     </label>
       <input
@@ -70,8 +76,12 @@ const db = {
         name="questions"
         required
       />
-     
+    </div>
     <input type="submit" id="submit-button" required value="submit" />
+    </fieldset>
+    
+     
+    
   </form>
 </div>`,
   resultsPage(score) {

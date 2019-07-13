@@ -44,7 +44,6 @@ function reset() {
 }
 
 function afterFeedback() {
-  //   $("main").html(db.feedbackPage(correct));
   $("main").one("click", ".feedback-button", () => render(quiz));
 }
 
