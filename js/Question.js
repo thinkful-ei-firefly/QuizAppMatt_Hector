@@ -19,7 +19,7 @@ class Question {
                 this.answer
               }"`
         } </h2>
-        <button class="feedback-button">Next Question!</button>
+        <button class="feedback-button">Next!</button>
       </div>
     </section>
   </div>`;
