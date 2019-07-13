@@ -78,7 +78,8 @@ main {
 .feedback-text {
   text-align: center;
   border-radius: 20px;
-  padding: 18rem;
+  padding: 2rem;
+  text-transform: capitalize;
 }
 .feedback-button {
   margin-top: 3rem;
@@ -86,6 +87,21 @@ main {
 
 .reset-button {
   display: none;
+  animation: pulse 2s infinite;
+  margin-right: 2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px #777;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+  cursor: pointer;
 }
 
 .input-group {
@@ -130,8 +146,35 @@ input[type="radio"] {
   margin-bottom: 2 rem;
   text-transform: capitalize;
 }
+.question:hover {
+  transform: skewY(2deg) skewX(3deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem #777;
+}
 
-#submit-button {
+.score,
+.question-num {
+  transition: all 0.3s;
+}
+
+.score:hover,
+.question-num:hover {
+  margin-left: 1rem;
+  transform: translateX(-1rem) skewY(2deg) skewX(3deg) scale(1.5);
+  text-shadow: 0.5rem 1rem 2rem #fff;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.logo:hover {
+  transform: translateX(4rem) skewY(2deg) skewX(3deg) scale(1.5);
+  text-shadow: 1rem 2rem 3rem #fff;
+}
+
+#submit-button,
+.feedback-button {
   padding: 2rem;
   width: 60vw;
   display: inline-block;
@@ -150,7 +193,8 @@ input[type="radio"] {
   transition: all 0.3s;
 }
 
-#submit-button:hover {
+#submit-button:hover,
+.feedback-button:hover {
   background-image: linear-gradient(
     to right,
     #b8cbb8 0%,
@@ -163,6 +207,40 @@ input[type="radio"] {
   transform: translateY(-5px);
   box-shadow: 3px 3px 5px 6px #777;
 }
-#submit-button:active {
-  transform: translateY(0px);
+#submit-button:active,
+.feedback-button:active {
+  transform: translateY(1px);
+  box-shadow: 1px 2px 2px 2px #777;
+}
+
+.icon {
+  font-size: 6rem;
+}
+
+/* animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* media queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .form,
+  .feedback {
+    width: 100vw;
+    border-radius: 10px;
+    height: 90vh;
+    text-align: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
 }

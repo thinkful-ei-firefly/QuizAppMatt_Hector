@@ -15,10 +15,16 @@ class Question {
         <h2>${
           correct
             ? "you got it right!!"
-            : `You'll have to do better than that the correct answer was  "${
+            : `You'll have to do better than that the correct answer was:  "${
                 this.answer
               }"`
         } </h2>
+        ${
+          correct
+            ? `<div class="icon"><i class="fas fa-laugh-beam"></i></i></div>`
+            : ` <div class="icon"><i class="fas fa-heart-broken"></i></div>`
+        }
+        
         <button class="feedback-button">Next!</button>
       </div>
     </section>

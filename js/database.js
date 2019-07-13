@@ -92,9 +92,14 @@ const db = {
     <h2>${
       score > 3
         ? `Wow you're a true Beatles Fan!! Congrats`
-        : "Ehh ya did ok mate Try Again"
+        : `Ehh ya did ok mate Try Again`
     }</h2>
     <h3>you scored ${score}/5 (${(score / 5) * 100}%)</h3>
+    ${
+      score > 3
+        ? `<div class="icon"><i class="fas fa-glass-cheers"></i></div>`
+        : ` <div class="icon"><i class="fas fa-hand-point-up"></i></div>`
+    }
   </div>
 </section>
 </div>`;
