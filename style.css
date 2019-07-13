@@ -12,7 +12,8 @@ html {
 }
 html::after {
   content: "";
-  background: url(img/beatles-background-2.jpg) no-repeat center center fixed;
+  background: url("https://thinkful-ei-firefly.github.io/QuizAppMatt_Hector/img/beatles-background-2.jpg")
+    no-repeat center center fixed;
   opacity: 0.9;
   background-size: cover;
   height: 100%;
