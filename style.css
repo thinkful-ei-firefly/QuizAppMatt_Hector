@@ -141,6 +141,11 @@ input[type="radio"] {
   left: 2rem;
   z-index: 3;
 }
+input[type="radio"]:focus,
+.feedback-button:focus,
+#submit-button:focus {
+  animation: pulse--light 2s infinite;
+}
 
 .question {
   margin-bottom: 2 rem;
@@ -234,6 +239,17 @@ input[type="radio"] {
   }
   50% {
     transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse--light {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
