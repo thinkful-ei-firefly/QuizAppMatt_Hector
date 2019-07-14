@@ -111,7 +111,6 @@ main {
   display: flex;
   color: black;
   text-transform: uppercase;
-  cursor: pointer;
   transition: all 0.3s ease-out;
   line-height: 22px;
   border: 1px black solid;
@@ -123,6 +122,7 @@ main {
   height: 100%;
   width: 50vw;
   text-align: center;
+  cursor: pointer;
 }
 .input-group:hover,
 .input-group:focus {
@@ -141,14 +141,13 @@ input[type="radio"] {
   left: 2rem;
   z-index: 3;
 }
-input[type="radio"]:focus,
-.feedback-button:focus,
-#submit-button:focus {
+input[type="radio"]:focus {
   animation: pulse--light 2s infinite;
 }
 
 .question {
   margin-bottom: 2 rem;
+  padding: 1.5rem;
   text-transform: capitalize;
 }
 .question:hover,
@@ -164,7 +163,7 @@ input[type="radio"]:focus,
 .feedback-title {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .score:hover,
@@ -201,7 +200,7 @@ input[type="radio"]:focus,
   );
   color: #fff;
   margin-bottom: 1rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 #submit-button:hover,
@@ -215,21 +214,26 @@ input[type="radio"]:focus,
     #ee609c 66%,
     #ee609c 100%
   );
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: 3px 3px 5px 6px #777;
 }
 #submit-button:active,
 .feedback-button:active {
-  transform: translateY(1px);
+  transform: translateY(0px);
   box-shadow: 1px 2px 2px 2px #777;
 }
 
 .icon {
   font-size: 6rem;
+  animation: pulse 2s infinite;
 }
 .icon--question {
   font-size: 2.5rem;
   margin-left: 0.5rem;
+}
+
+.icon--last {
+  animation-iteration-count: 2;
 }
 
 /* animation */

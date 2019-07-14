@@ -1,5 +1,5 @@
 //SET HTML UTILS
-const createFormHtml = () => $("main").html(db.formTemplate);
+const createFormHtml = () => $("main").html(db.formTemplate());
 
 const setHeaderHtml = () => {
   $(".score").html(`<span>Score: ${quiz.score}</span>`);
