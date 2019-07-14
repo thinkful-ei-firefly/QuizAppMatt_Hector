@@ -14,7 +14,6 @@ function render(quiz) {
 
 const quiz = new Quiz(db.questions);
 
-const main = () =>
-  $(".form-area").one("click", ".start-button", () => render(quiz));
+const main = () => handleStartup();
 
 $(main);
