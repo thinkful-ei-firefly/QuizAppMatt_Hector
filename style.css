@@ -264,6 +264,7 @@ input[type="radio"]:focus {
 
 /* media queries */
 
+/* portrait styles */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .form,
   .feedback {
@@ -271,6 +272,9 @@ input[type="radio"]:focus {
     border-radius: 10px;
     height: 90vh;
     text-align: center;
+  }
+  .input-group {
+    padding: 1rem;
   }
   .logo {
     font-size: 1.5rem;
@@ -280,5 +284,28 @@ input[type="radio"]:focus {
   }
   .question {
     margin-bottom: 4rem;
+  }
+}
+
+/* landscape styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .form,
+  .feedback {
+    width: 100vw;
+    border-radius: 10px;
+    height: 400px;
+    text-align: center;
+  }
+  .input-group {
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .icon--question {
+    font-size: 2rem;
+  }
+  .question {
+    margin-bottom: 1rem;
   }
 }
