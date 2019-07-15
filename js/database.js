@@ -30,11 +30,11 @@ const db = {
   ],
   formTemplate() {
     return `<div class="row">
-    <form class="form">
-      <h1 class="question">Question goes here</h1>
+    <form class="form" role="form">
+      <h1 class="question" id="question">Question goes here</h1>
       <fieldset>
       <div class="input-group"> 
-      <label class="answerOption choice0" for="choice0">
+      <label class="answerOption choice0" for="choice0" aria-labelledby="question">
        <span></span> </label>
       <input
         type="radio"
