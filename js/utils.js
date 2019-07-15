@@ -14,7 +14,7 @@ const setQuestionHtml = question => {
   $(".question").html(
     `<span>${
       question.text
-    }</span> <span class="icon--question"><i class="fas fa-guitar"></i></span>`
+    }</span> <span class="icon--question"><i aria-hidden="true" class="fas fa-guitar"></i></span>`
   );
 };
 

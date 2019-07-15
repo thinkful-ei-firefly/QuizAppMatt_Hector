@@ -99,8 +99,8 @@ const db = {
     <h3>you scored ${score}/5 (${(score / 5) * 100}%)</h3>
     ${
       score > 3
-        ? `<div class="icon icon--last"><i class="fas fa-glass-cheers"></i></div>`
-        : ` <div class="icon icon--last"><i class="fas fa-hand-point-up"></i></div>`
+        ? `<div aria-hidden="true" class="icon icon--last"><i class="fas fa-glass-cheers"></i></div>`
+        : ` <div aria-hidden="true" class="icon icon--last"><i class="fas fa-hand-point-up"></i></div>`
     }
   </div>
 </section>

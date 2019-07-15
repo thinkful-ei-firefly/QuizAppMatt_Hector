@@ -23,8 +23,8 @@ class Question {
         } </h2>
         ${
           correct
-            ? `<div class="icon"><i class="fas fa-laugh-beam"></i></i></div>`
-            : ` <div class="icon"><i class="fas fa-heart-broken"></i></div>`
+            ? `<div aria-hidden="true" class="icon"><i class="fas fa-laugh-beam"></i></i></div>`
+            : ` <div aria-hidden="true" class="icon"><i class="fas fa-heart-broken"></i></div>`
         }
         
         <button class="feedback-button">Next!</button>
