@@ -1,5 +1,5 @@
 //SET HTML UTILS
-const createFormHtml = () => $("main").html(db.formTemplate());
+const createFormHtml = () => $("main").html(quiz.formTemplate());
 
 const setHeaderHtml = () => {
   $(".score").html(`<span>Score: ${quiz.score}</span>`);
@@ -30,7 +30,7 @@ const setFeedbackResponseHtml = (correct, question) => {
 };
 
 const displayResultsHtml = () => {
-  $("main").html(db.resultsPage(quiz.score));
+  $("main").html(quiz.resultsPage());
   $(".reset-button").css("display", "block");
   handleReset();
 };
