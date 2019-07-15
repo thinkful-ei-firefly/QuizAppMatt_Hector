@@ -1,12 +1,12 @@
 const db = {
   questions: [
     new Question(
-      "What is the best programming language?",
+      "What language?",
       ["Java", "Javascript", "C++", "C#"],
       "Javascript"
     ),
     new Question(
-      "What is the best part of Javascript?",
+      "sdhbwKQBDU",
       [
         "Prototypical Inheritance",
         "For in loops",
