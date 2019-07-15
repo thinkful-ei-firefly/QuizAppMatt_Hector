@@ -37,8 +37,12 @@ const displayResultsHtml = () => {
 
 //EVENT HANDLING UTILS
 
-const handleStartup = () =>
-  $(".form-area").one("click", ".start-button", () => render(quiz));
+const handleStartup = () => {
+  $(".form-area").one("click", ".start-button", () => {
+    console.log("fired");
+    render(quiz);
+  });
+};
 
 const handleSubmit = (quiz, question) => {
   $("main").one("submit", ".form", e => {

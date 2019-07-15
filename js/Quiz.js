@@ -77,11 +77,11 @@ class Quiz {
   }
   resultsPage() {
     return `<div class="row">
-<section class="feedback">
+  <section class="feedback">
   <div class="feedback-text">
     <h1  class="feedback-title" >Thanks For Playing!!</h1>
     <h2 class="feedback-title">${
-      score > 3
+      this.score > 3
         ? `Wow you're a true Beatles Fan!! Congrats`
         : `Ehh ya did ok mate Try Again`
     }</h2>
@@ -90,6 +90,6 @@ class Quiz {
       this.score > 3
         ? `<div aria-hidden="true" class="icon icon--last"><i class="fas fa-glass-cheers"></i></div>`
         : ` <div aria-hidden="true" class="icon icon--last"><i class="fas fa-hand-point-up"></i></div>`
-    }
+    }`;
   }
 }
