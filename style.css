@@ -10,10 +10,10 @@ html {
   position: relative;
   height: 100vh;
 }
+
 html::after {
   content: "";
-  background: url("https://thinkful-ei-firefly.github.io/QuizAppMatt_Hector/img/beatles-background-2.jpg")
-    no-repeat center center fixed;
+  background: url(/img/beetlesCloudBackground.jpg) no-repeat center center fixed;
   opacity: 0.9;
   background-size: cover;
   height: 100%;
@@ -68,6 +68,7 @@ main {
   flex-direction: column;
   color: black;
   align-items: center;
+  opacity: 0.9;
 }
 
 .row {
@@ -207,7 +208,7 @@ input[type="radio"]:focus {
 
 #submit-button:hover,
 .feedback-button:hover {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     #b8cbb8 0%,
     #b8cbb8 0%,
@@ -215,7 +216,7 @@ input[type="radio"]:focus {
     #cf6cc9 33%,
     #ee609c 66%,
     #ee609c 100%
-  );
+  ); */
   transform: translateY(-6px);
   box-shadow: 3px 3px 5px 6px #777;
 }
