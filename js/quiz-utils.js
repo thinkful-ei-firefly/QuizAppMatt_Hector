@@ -38,7 +38,7 @@ const displayResultsHtml = () => {
 //EVENT HANDLING UTILS
 
 const handleStartup = () => {
-  $(".form-area").one("click", ".start-button", () => {
+  $("main").one("click", ".start-button", () => {
     console.log("fired");
     render(quiz);
   });

@@ -57,6 +57,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+.start-section,
 .form,
 .feedback {
   background-color: #f8f9d2;
@@ -70,6 +71,9 @@ main {
   color: black;
   align-items: center;
   opacity: 0.9;
+}
+.start-section {
+  transition: all 0.5s;
 }
 
 .row {
@@ -144,14 +148,13 @@ input[type="radio"] {
   left: 2rem;
   z-index: 3;
 }
-input[type="radio"]:focus {
-  animation: pulse--light 2s infinite;
-}
 
 .question {
+  font-size: 2.5rem;
   margin-bottom: 2 rem;
   padding: 1.5rem;
   text-transform: capitalize;
+  text-align: center;
 }
 .question:hover,
 .feedback-title:hover {
@@ -185,7 +188,7 @@ input[type="radio"]:focus {
   transform: translateX(4rem) skewY(2deg) skewX(3deg) scale(1.5);
   text-shadow: 1rem 2rem 3rem #fff;
 }
-
+.start-button,
 #submit-button,
 .feedback-button {
   font-size: 2rem;
@@ -206,21 +209,13 @@ input[type="radio"]:focus {
   margin-bottom: 1rem;
   transition: all 0.2s;
 }
-
+.start-button:hover,
 #submit-button:hover,
 .feedback-button:hover {
-  /* background-image: linear-gradient(
-    to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
-  ); */
   transform: translateY(-6px);
   box-shadow: 3px 3px 5px 6px #777;
 }
+.start-button:active,
 #submit-button:active,
 .feedback-button:active {
   transform: translateY(0px);
@@ -238,6 +233,32 @@ input[type="radio"]:focus {
 
 .icon--last {
   animation-iteration-count: 2;
+}
+
+.start-icon {
+  font-size: 4rem;
+  animation: pulse--light 2s infinite;
+}
+.start-image {
+  width: 30%;
+  height: 30%;
+  border-radius: 200px;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-weight: bold;
+}
+.start-desc {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.start-image:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 2px #777;
 }
 
 /* animation */
@@ -268,12 +289,14 @@ input[type="radio"]:focus {
 
 /* portrait styles */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .start-section,
   .form,
   .feedback {
     width: 100vw;
     border-radius: 10px;
     height: 90vh;
     text-align: center;
+    border-radius: 0;
   }
   .input-group {
     padding: 1rem;
@@ -288,16 +311,21 @@ input[type="radio"]:focus {
   .question {
     margin-bottom: 4rem;
   }
+  .start-image {
+    width: 50%;
+  }
 }
 
 /* landscape styles */
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .start-section,
   .form,
   .feedback {
     width: 100vw;
     border-radius: 10px;
     height: 400px;
     text-align: center;
+    border-radius: 0;
   }
   .input-group {
     padding: 1rem;
@@ -310,5 +338,10 @@ input[type="radio"]:focus {
   }
   .question {
     margin-bottom: 1rem;
+  }
+  .start-image {
+    width: 25%;
+    height: 40%;
+    border-radius: 200px;
   }
 }
