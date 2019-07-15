@@ -13,7 +13,8 @@ html {
 
 html::after {
   content: "";
-  background: url(/img/beetlesCloudBackground.jpg) no-repeat center center fixed;
+  background: url("https://thinkful-ei-firefly.github.io/QuizAppMatt_Hector/img/beetlesCloudBackground.jpg")
+    no-repeat center center fixed;
   opacity: 0.9;
   background-size: cover;
   height: 100%;
