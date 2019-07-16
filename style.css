@@ -1,3 +1,4 @@
+/* Global Styles */
 *,
 *::after,
 *::before {
@@ -34,6 +35,13 @@ body {
   color: black;
 }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,11 +60,42 @@ header .quiz-stats {
 .question-num {
   margin-right: 2rem;
 }
+
+/* Landing Page */
+.start-icon {
+  font-size: 4rem;
+  animation: pulse--light 2s infinite;
+}
+.start-image {
+  width: 30%;
+  height: 30%;
+  border-radius: 200px;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-weight: bold;
+}
+.start-desc {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.start-image:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 2px #777;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Form & Feedback */
+
 .start-section,
 .form,
 .feedback {
@@ -76,11 +115,6 @@ main {
   transition: all 0.5s;
 }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
 .feedback-text {
   text-align: center;
   border-radius: 20px;
@@ -89,25 +123,6 @@ main {
 }
 .feedback-button {
   margin-top: 3rem;
-}
-
-.reset-button {
-  display: none;
-  animation: pulse 2s infinite;
-  margin-right: 2rem;
-  border-radius: 2rem;
-  box-shadow: 1px 1px 2px #777;
-  padding: 0.5rem;
-  background-image: linear-gradient(
-    to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
-  );
-  cursor: pointer;
 }
 
 .input-group {
@@ -188,9 +203,8 @@ input[type="radio"] {
   transform: translateX(4rem) skewY(2deg) skewX(3deg) scale(1.5);
   text-shadow: 1rem 2rem 3rem #fff;
 }
-.start-button,
-#submit-button,
-.feedback-button {
+/* button styles */
+.button {
   font-size: 2rem;
   padding: 2rem;
   width: 60vw;
@@ -208,19 +222,39 @@ input[type="radio"] {
   color: #fff;
   margin-bottom: 1rem;
   transition: all 0.2s;
+  cursor: pointer;
 }
-.start-button:hover,
-#submit-button:hover,
-.feedback-button:hover {
+
+.button:hover {
   transform: translateY(-6px);
   box-shadow: 3px 3px 5px 6px #777;
 }
-.start-button:active,
-#submit-button:active,
-.feedback-button:active {
+
+.button:active {
   transform: translateY(0px);
   box-shadow: 1px 2px 2px 2px #777;
 }
+
+.reset-button {
+  display: none;
+  animation: pulse 2s infinite;
+  margin-right: 2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 2px #777;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+  cursor: pointer;
+}
+
+/* Icon  */
 
 .icon {
   font-size: 6rem;
@@ -233,32 +267,6 @@ input[type="radio"] {
 
 .icon--last {
   animation-iteration-count: 2;
-}
-
-.start-icon {
-  font-size: 4rem;
-  animation: pulse--light 2s infinite;
-}
-.start-image {
-  width: 30%;
-  height: 30%;
-  border-radius: 200px;
-  transition: all 0.2s;
-  margin-bottom: 10px;
-}
-
-.main-heading {
-  font-weight: bold;
-}
-.start-desc {
-  font-size: 2rem;
-  font-weight: lighter;
-  margin-bottom: 2rem;
-}
-
-.start-image:hover {
-  transform: scale(1.1);
-  box-shadow: 5px 5px 5px 2px #777;
 }
 
 /* animation */

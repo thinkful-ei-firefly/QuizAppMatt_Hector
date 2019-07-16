@@ -38,10 +38,7 @@ const displayResultsHtml = () => {
 //EVENT HANDLING UTILS
 
 const handleStartup = () => {
-  $("main").one("click", ".start-button", () => {
-    console.log("fired");
-    render(quiz);
-  });
+  $("main").one("click", ".start-button", () => render(quiz));
 };
 
 const handleSubmit = (quiz, question) => {

@@ -27,7 +27,7 @@ class Question {
             : ` <div aria-hidden="true" class="icon"><i class="fas fa-heart-broken"></i></div>`
         }
         
-        <button class="feedback-button">Next!</button>
+        <button class="feedback-button button">Next!</button>
       </div>
     </section>
   </div>`;

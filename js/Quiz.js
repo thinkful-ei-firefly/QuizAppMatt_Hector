@@ -67,7 +67,7 @@ class Quiz {
           required
         />
       </div>
-      <input type="submit" id="submit-button" required value="submit" />
+      <input type="submit" id="submit-button" class="button" required value="submit" />
       </fieldset>
       
        
